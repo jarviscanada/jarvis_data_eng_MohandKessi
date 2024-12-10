@@ -29,8 +29,11 @@ timestamp=$(vmstat -t | awk '{print $(NF-1), $NF}' | tail -n1 | xargs)
 # Subquery to find matching id in host_info table
 #host_id="(SELECT id FROM host_info WHERE hostname='$hostname')"; Commented because it causes error
 
-host_id=$(psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -t -c "SELECT id FROM host_info WHERE hostname='$hostname';" | xargs)
+#set up env var for pql cmd
+export PGPASSWORD=$psql_password
 
+
+host_id=$(psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -t -c "SELECT id FROM host_info WHERE hostname='$hostname';" | xargs)
 
 # PSQL command: Inserts server usage data into host_usage table
 # Note: be careful with double and single quotes
@@ -39,8 +42,6 @@ insert_stmt="INSERT INTO host_usage(timestamp, host_id, memory_free, cpu_idle, c
 VALUES('$timestamp', $host_id, '$memory_free', '$cpu_idle', '$cpu_kernel', '$disk_io', $disk_available);"
 
 
-#set up env var for pql cmd
-export PGPASSWORD=$psql_password
 #Insert date into a database
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
 exit $?
