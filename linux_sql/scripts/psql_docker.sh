@@ -30,7 +30,7 @@ case $cmd in
   fi
 
   # Create container
-	docker volume jrvs-psql-data
+	docker volume create jrvs-psql-data
   # Start the container
 	docker run -d --name jrvs-psql -e POSTGRES_USER=$db_username -e POSTGRES_PASSWORD=$db_password -v jrvs-psql-data:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
   # Make sure you understand what's `$?`
