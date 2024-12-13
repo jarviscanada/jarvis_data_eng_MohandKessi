@@ -17,6 +17,7 @@ psql -U username -f ddl.sql
 ## Insert real-time hardware usage metrics 
 ./host_usage.sh host port database username password
 
+
 # Implementation
 ## Architecture
 TODO
@@ -31,6 +32,9 @@ Usage: ./host_info.sh host port database username password
 ### host_usage.sh
 Purpose: Collects real-time usage metrics and stores them in the host_usage table
 Usage: ./host_usage.sh host port database username password
+### sql/ddl.sql
+Purpose: Create the host_info and host_usage tables if they don't exist
+Usage: psql -U username -f ddl.sql
 
 ## Database Modeling
 ### host_info
