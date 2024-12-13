@@ -26,21 +26,28 @@ TODO
 `psql_docker.sh`
 
 Purpose: Manages the PostgreSQL container
+
 Usage: ./psql_docker.sh start|stop|create
+
 
 `host_info.sh`
 
 Purpose: Collects static hardware information and stores it in host_info table
+
 Usage: ./host_info.sh host port database username password
+
 
 `host_usage.sh`
 
 Purpose: Collects real-time usage metrics and stores them in the host_usage table
+
 Usage: ./host_usage.sh host port database username password
+
 
 `sql/ddl.sql`
 
 Purpose: Create the host_info and host_usage tables if they don't exist
+
 Usage: psql -U username -f ddl.sql
 
 ## Database Modeling
