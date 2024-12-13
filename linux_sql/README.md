@@ -23,39 +23,39 @@ psql -U username -f ddl.sql
 TODO
 
 ## Scripts
-### psql_docker.sh
+`psql_docker.sh`
 Purpose: Manages the PostgreSQL container
 Usage: ./psql_docker.sh start|stop|create
-### host_info.sh
+`host_info.sh`
 Purpose: Collects static hardware information and stores it in host_info table
 Usage: ./host_info.sh host port database username password
-### host_usage.sh
+`host_usage.sh`
 Purpose: Collects real-time usage metrics and stores them in the host_usage table
 Usage: ./host_usage.sh host port database username password
-### sql/ddl.sql
+`sql/ddl.sql`
 Purpose: Create the host_info and host_usage tables if they don't exist
 Usage: psql -U username -f ddl.sql
 
 ## Database Modeling
 ### host_info
-id SERIAL ⭐
-hostname VARCHAR UNIQUE 
-cpu_numer INT2
-cpu_architecture VARCHAR
-cpu_model VARCHAR
-cpu_mhz FLOAT8
-l2_cache INT4
-timestamp TIMESTAMP
-total_mem INT4
+`id` SERIAL ⭐
+`hostname` VARCHAR UNIQUE 
+`cpu_numer` INT2
+`cpu_architecture` VARCHAR
+`cpu_model` VARCHAR
+`cpu_mhz` FLOAT8
+`l2_cache` INT4
+`timestamp` TIMESTAMP
+`total_mem` INT4
 
 ### host_usage
-timestamp TIMESTAMP
-host_id SERIAL FK
-memory_free INT4
-cpu_idle INT2
-cpu_kernel INT2
-disk_io INT4
-disk_available INT4
+`timestamp` TIMESTAMP
+`host_id` SERIAL FK
+`memory_free` INT4
+`cpu_idle` INT2
+`cpu_kernel` INT2
+`disk_io` INT4
+`disk_available` INT4
 
 ## Tests
 Each script was thoroughly tested on a local environment and Linux VMs
