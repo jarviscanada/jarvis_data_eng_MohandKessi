@@ -85,7 +85,9 @@ Usage: psql -U username -f ddl.sql
 
 ## Tests
 Each script was thoroughly tested on a local environment and Linux VMs
+
 DDL Script : Exectued on an empty database to ensure tables are created correctly
+
 Shell Scripts: Validated by running them with known inputs and comparing database entires
 
 ## Deployment
