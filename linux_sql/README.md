@@ -61,7 +61,7 @@ Usage: psql -U username -f ddl.sql
 |-----------------------|-----------------|--------------------------------------|-----------------------|
 | `id`                 | SERIAL          | Unique identifier for the host       | ⭐ Primary Key        |
 | `hostname`           | VARCHAR         | Hostname of the machine              | UNIQUE, NOT NULL       |
-| `cpu_numer`          | INT2            | Number of CPUs                       | NOT NULL               |
+| `cpu_number`          | INT2            | Number of CPUs                       | NOT NULL               |
 | `cpu_architecture`   | VARCHAR         | CPU architecture (e.g., x86, ARM)    | NOT NULL               |
 | `cpu_model`          | VARCHAR         | Model name of the CPU                | NOT NULL               |
 | `cpu_mhz`            | FLOAT8          | CPU clock speed in MHz               | NOT NULL               |
