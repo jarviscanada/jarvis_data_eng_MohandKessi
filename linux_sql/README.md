@@ -17,6 +17,10 @@ psql -U username -f ddl.sql
 
 # Insert real-time hardware usage metrics 
 ./host_usage.sh host port database username password
+
+# Crontab setup
+crontab -e
+* * * * * bash /path/to/host/host_agent.sh host port db_name username password &> /path/to/logfile.log 
 ```
 
 # Implementation
