@@ -2,21 +2,22 @@
 This project is designed to monitor and log hardware specifications and usage metrics for a set of Linux servers. The project automates data collection and storage using shell scripts, PostgreSQL for data storage, and Docker for isolation. Key technologies include Bash scripting for automation, Git for version control, and Crontab for automation. This solution ensures easy deployment and scalability across multiple Linux hosts.
 
 # Quick Start
-## Step 1: Create a container using the psql_docker bash script
+```
+# Create a container using the psql_docker bash script
 ./psql_docker.sh create username password
 
-## Step 2: Start the PostgreSQL container
+# Start the PostgreSQL container
 ./psql_docker.sh start
 
-## Create the tables using the ddl script (located in sql/)
+# Create the tables using the ddl script (located in sql/)
 psql -U username -f ddl.sql
 
-## Insert hardware specs
+# Insert hardware specs
 ./host_info.sh host port database username password 
 
-## Insert real-time hardware usage metrics 
+# Insert real-time hardware usage metrics 
 ./host_usage.sh host port database username password
-
+```
 
 # Implementation
 ## Architecture
