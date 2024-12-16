@@ -66,8 +66,8 @@ Usage: psql -U username -f ddl.sql
 | `cpu_model`          | VARCHAR         | Model name of the CPU                | NOT NULL               |
 | `cpu_mhz`            | FLOAT8          | CPU clock speed in MHz               | NOT NULL               |
 | `l2_cache`           | INT4            | Size of L2 cache in KB               | NOT NULL               |
-| `timestamp`          | TIMESTAMP       | Time of host data collection         | NULLABLE               |
-| `total_mem`          | INT4            | Total memory                         | NULLABLE               |
+| `timestamp`          | TIMESTAMP       | Time of host data collection         |                        |
+| `total_mem`          | INT4            | Total memory                         |                        |
 
 ### host_usage
 | **Column**         | **Data Type**   | **Description**                  | **Constraints**       |
