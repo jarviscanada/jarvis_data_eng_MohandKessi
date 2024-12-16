@@ -22,7 +22,7 @@ hostname=$(hostname -f)
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1 | xargs)
 cpu_idle=$(echo "$vmstat_mb" | awk 'NR==3 {print $15}' | xargs)
 cpu_kernel=$(echo "$vmstat_mb" | awk 'NR==3 {print $14}' | xargs)
-disk_io=$(echo "$vmstat_mb" | sed -n '$p' | awk '{print $10 + $11}' | xargs)
+disk_io=$(echo "$vmstat_mb" | tail -n1 | awk '{print $10 + $11}' | xargs)
 disk_available=$(df -BM / | awk '{print $4}' | awk '{print substr($0, 1, 5)};' | tail -n1 | xargs)
 
 # Current time in `2019-11-26 14:40:19` UTC format
