@@ -20,8 +20,8 @@ hostname=$(hostname -f)
 # Retrieve hardware specification variables
 # xargs is a trick to trim leading and trailing white spaces
 memory_free=$(echo "$vmstat_mb" | awk '{print $4}'| tail -n1 | xargs)
-cpu_idle=$(echo "$vmstat_mb" | awk 'NR==3 {print $15}' | xargs)
-cpu_kernel=$(echo "$vmstat_mb" | awk 'NR==3 {print $14}' | xargs)
+cpu_idle=$(echo "$vmstat_mb" | awk '{print $15}' | tail -n1 | xargs)
+cpu_kernel=$(echo "$vmstat_mb" | awk '{print $14}' | tail -n1 | xargs)
 disk_io=$(echo "$vmstat_mb" | tail -n1 | awk '{print $9 + $10}' | xargs)
 disk_available=$(df -BM / | awk '{print $4}' | sed 's/[A-Za-z]//g' | tail -n1 | xargs)
 
