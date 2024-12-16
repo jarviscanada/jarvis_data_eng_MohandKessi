@@ -56,25 +56,25 @@ Usage: psql -U username -f ddl.sql
 | **Column**           | **Data Type**   | **Description**                      | **Constraints**       |
 |-----------------------|-----------------|--------------------------------------|-----------------------|
 | `id`                 | SERIAL          | Unique identifier for the host       | ⭐ Primary Key        |
-| `hostname`           | VARCHAR         | Hostname of the machine              | UNIQUE               |
-| `cpu_numer`          | INT2            | Number of CPUs                       |                       |
-| `cpu_architecture`   | VARCHAR         | CPU architecture (e.g., x86, ARM)    |                       |
-| `cpu_model`          | VARCHAR         | Model name of the CPU                |                       |
-| `cpu_mhz`            | FLOAT8          | CPU clock speed in MHz               |                       |
-| `l2_cache`           | INT4            | Size of L2 cache in KB               |                       |
-| `timestamp`          | TIMESTAMP       | Time of host data collection         |                       |
-| `total_mem`          | INT4            | Total memory                         |                       |
+| `hostname`           | VARCHAR         | Hostname of the machine              | UNIQUE, NOT NULL       |
+| `cpu_numer`          | INT2            | Number of CPUs                       | NOT NULL               |
+| `cpu_architecture`   | VARCHAR         | CPU architecture (e.g., x86, ARM)    | NOT NULL               |
+| `cpu_model`          | VARCHAR         | Model name of the CPU                | NOT NULL               |
+| `cpu_mhz`            | FLOAT8          | CPU clock speed in MHz               | NOT NULL               |
+| `l2_cache`           | INT4            | Size of L2 cache in KB               | NOT NULL               |
+| `timestamp`          | TIMESTAMP       | Time of host data collection         | NULLABLE               |
+| `total_mem`          | INT4            | Total memory                         | NULLABLE               |
 
 ### host_usage
 | **Column**         | **Data Type**   | **Description**                  | **Constraints**       |
 |---------------------|-----------------|----------------------------------|-----------------------|
-| `timestamp`        | TIMESTAMP       | Time of data collection          |                       |
-| `host_id`          | SERIAL          | Identifier for the host          | FK (Foreign Key)      |
-| `memory_free`      | INT4            | Free memory in bytes             |                       |
-| `cpu_idle`         | INT2            | CPU idle time percentage         |                       |
-| `cpu_kernel`       | INT2            | CPU kernel time percentage       |                       |
-| `disk_io`          | INT4            | Disk I/O operations count        |                       |
-| `disk_available`   | INT4            | Available disk space in bytes    |                       |
+| `timestamp`        | TIMESTAMP       | Time of data collection          | NOT NULL               |
+| `host_id`          | SERIAL          | Identifier for the host          | FK (Foreign Key)       |
+| `memory_free`      | INT4            | Free memory in bytes             | NOT NULL               |
+| `cpu_idle`         | INT2            | CPU idle time percentage         | NOT NULL               |
+| `cpu_kernel`       | INT2            | CPU kernel time percentage       | NOT NULL               |
+| `disk_io`          | INT4            | Disk I/O operations count        | NOT NULL               |
+| `disk_available`   | INT4            | Available disk space in bytes    | NOT NULL               |
 
 
 
