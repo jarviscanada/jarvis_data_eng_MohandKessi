@@ -21,7 +21,7 @@ psql -U username -f ddl.sql
 
 # Implementation
 ## Architecture
-TODO
+![Architecture](assets/linux_project_architecture.png)
 
 ## Scripts
 `psql_docker.sh`
