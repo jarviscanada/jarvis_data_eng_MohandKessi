@@ -53,39 +53,29 @@ Usage: psql -U username -f ddl.sql
 
 ## Database Modeling
 ### host_info
-`id` SERIAL ⭐
-
-`hostname` VARCHAR UNIQUE 
-
-`cpu_numer` INT2
-
-`cpu_architecture` VARCHAR
-
-`cpu_model` VARCHAR
-
-`cpu_mhz` FLOAT8
-
-`l2_cache` INT4
-
-`timestamp` TIMESTAMP
-
-`total_mem` INT4
-
+| **Column Name**   | **Data Type**   | **Constraints**       |
+|--------------------|-----------------|------------------------|
+| `id`              | SERIAL          | ⭐ Primary Key         |
+| `hostname`        | VARCHAR         | UNIQUE                |
+| `cpu_numer`       | INT2            |                        |
+| `cpu_architecture`| VARCHAR         |                        |
+| `cpu_model`       | VARCHAR         |                        |
+| `cpu_mhz`         | FLOAT8          |                        |
+| `l2_cache`        | INT4            |                        |
+| `timestamp`       | TIMESTAMP       |                        |
+| `total_mem`       | INT4            |                        |
 
 ### host_usage
-`timestamp` TIMESTAMP
+| **Column**         | **Data Type**   | **Constraints**       |
+|---------------------|-----------------|-----------------------|
+| `timestamp`        | TIMESTAMP       |                       |
+| `host_id`          | SERIAL          | FK (Foreign Key)      |
+| `memory_free`      | INT4            |                       |
+| `cpu_idle`         | INT2            |                       |
+| `cpu_kernel`       | INT2            |                       |
+| `disk_io`          | INT4            |                       |
+| `disk_available`   | INT4            |                       |
 
-`host_id` SERIAL FK
-
-`memory_free` INT4
-
-`cpu_idle` INT2
-
-`cpu_kernel` INT2
-
-`disk_io` INT4
-
-`disk_available` INT4
 
 
 ## Tests
