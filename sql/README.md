@@ -4,7 +4,7 @@
 
 ###### Table Setup (DDL)
 
-    CREATE TABLE members
+    CREATE TABLE cd.members
     (
        memid INTEGER NOT NULL, 
        surname VARCHAR(200) NOT NULL, 
@@ -16,10 +16,10 @@
        joindate TIMESTAMP NOT NULL,
        CONSTRAINT members_pk PRIMARY KEY (memid),
        CONSTRAINT fk_members_recommendedby FOREIGN KEY (recommendedby)
-            REFERENCES members(memid) ON DELETE SET NULL
+            REFERENCES cd.members(memid) ON DELETE SET NULL
     );
     
-    CREATE TABLE facilities
+    CREATE TABLE cd.facilities
     (
        facid INTEGER NOT NULL, 
        name VARCHAR(100) NOT NULL, 
@@ -30,7 +30,7 @@
        CONSTRAINT facilities_pk PRIMARY KEY (facid)
     );
     
-    CREATE TABLE bookings
+    CREATE TABLE cd.bookings
     (
        bookid integer NOT NULL,
        facid integer NOT NULL,
@@ -38,8 +38,8 @@
        starttime timestamp NOT NULL,
        slots integer NOT NULL,
        CONSTRAINT bookings_pk PRIMARY KEY (bookid),
-       CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES facilities(facid),
-       CONSTRAINT fk_bookins_memid FOREIGN KEY (memid) REFERENCES members(memid),
+       CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid),
+       CONSTRAINT fk_bookins_memid FOREIGN KEY (memid) REFERENCES cd.members(memid),
     )
     
 ###### Question 1: Insert a new facillity
