@@ -58,6 +58,37 @@ SELECT DISTINCT mems.firstname || ' ' || mems.surname AS member, recs.firstname 
 SELECT recommendedby, count(*) FROM cd.members WHERE recommendedby IS NOT NULL GROUP BY recommendedby ORDER BY recommendedby;
 
 -- Question 17 : Group By Order 2
-SELECT facid, sum(slots) AS "Total Slots" FROM cd.bookings GROUP BY facid ORDER BY facid;
+SELECT facid, sum(slots) AS "Total" FROM cd.bookings GROUP BY facid ORDER BY facid;
 
---Question 18 :
+-- Question 18 : Group By with condition
+SELECT facid, sum(slots) AS "Total" FROM cd.bookings WHERE starttime>='2012-09-01' AND starttime < '2012-10-01' GROUP BY facid ORDER BY sum(slots);
+
+-- Question 19 : Group By multi col
+SELECT facid, DATE_PART('month', starttime) AS month, SUM(slots) AS Total FROM cd.bookings WHERE DATE_PART('year', starttime) = 2012 GROUP BY facid, month ORDER BY facid, month;
+
+-- Question 20 : Count distinct
+SELECT count(distinct memid) from cd.bookings;
+
+-- Question 21 : Group by multiple cols 
+SELECT mems.surname, mems.firstname, mems.memid, MIN(bks.starttime) AS first_booking_time FROM cd.bookings bks INNER JOIN cd.members mems ON mems.memid = bks.memid WHERE bks.starttime >= '2012-09-01' GROUP BY mems.surname, mems.firstname, mems.memid ORDER BY mems.memid;
+
+-- Question 22 : Window function 
+SELECT count(*) OVER(), firstname, surname FROM cd.members ORDER BY joindate;
+
+-- Question 23 : Window function 2
+SELECT row_number() OVER(ORDER BY joindate), firstname, surname FROM cd.members ORDER BY joindate
+
+-- Question 24 : Window Function subquery group by
+SELECT facid, total FROM (SELECT facid, SUM(slots) AS total, RANK() OVER (ORDER BY SUM(slots) DESC) AS rank FROM cd.bookings GROUP BY facid) AS ranked WHERE rank = 1;
+
+
+-- STRING
+
+-- Question 25 : Format Names of members
+SELECT surname || ', ' || firstname AS name FROM cd.members;       
+
+-- Question 26 : WHERE + String Function
+SELECT memid, telephone FROM cd.members WHERE telephone ~ '[()]';
+
+-- Question 27 : Group By substr
+SELECT SUBSTR(mems.surname, 1,1) AS letter, COUNT(*) AS count FROM cd.members mems GROUP BY letter ORDER BY letter;
