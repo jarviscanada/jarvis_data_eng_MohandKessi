@@ -1,9 +1,49 @@
 # Introduction
+This project involves managing a club's membership, facilities, and bookings through an SQL database. 
+
+## Tables
+
+### `cd.membership`
+
+| **Column**           | **Data Type**   | **Description**                      | **Constraints**       |
+|----------------------|-----------------|--------------------------------------|-----------------------|
+| `id`                 | SERIAL          | Unique identifier for the host       | ⭐ Primary Key        |
+| `hostname`           | VARCHAR         | Hostname of the machine              | UNIQUE, NOT NULL       |
+| `cpu_number`         | INT2            | Number of CPUs                       | NOT NULL               |
+| `cpu_architecture`   | VARCHAR         | CPU architecture (e.g., x86, ARM)    | NOT NULL               |
+| `cpu_model`          | VARCHAR         | Model name of the CPU                | NOT NULL               |
+| `cpu_mhz`            | FLOAT8          | CPU clock speed in MHz               | NOT NULL               |
+| `l2_cache`           | INT4            | Size of L2 cache in KB               | NOT NULL               |
+| `timestamp`          | TIMESTAMP       | Time of host data collection         |                       |
+| `total_mem`          | INT4            | Total memory                         |                       |
+
+### `cd.facilities`
+
+| **Column**           | **Data Type**   | **Description**                      | **Constraints**       |
+|----------------------|-----------------|--------------------------------------|-----------------------|
+| `facid`              | INTEGER         | Unique facility identifier           | ⭐ Primary Key        |
+| `name`               | VARCHAR(100)    | Name of the facility                 | NOT NULL               |
+| `membercost`         | NUMERIC         | Cost for members                     | NOT NULL               |
+| `guestcost`          | NUMERIC         | Cost for guests                      | NOT NULL               |
+| `initialoutlay`      | NUMERIC         | Initial outlay for the facility      | NOT NULL               |
+| `monthlymaintenance` | NUMERIC         | Monthly maintenance cost for the facility | NOT NULL           |
+
+### `cd.bookings`
+
+| **Column**           | **Data Type**   | **Description**                      | **Constraints**       |
+|----------------------|-----------------|--------------------------------------|-----------------------|
+| `bookid`             | INTEGER         | Unique booking identifier            | ⭐ Primary Key        |
+| `facid`              | INTEGER         | ID of the facility booked            | FOREIGN KEY (facid) REFERENCES `cd.facilities`(facid) |
+| `memid`              | INTEGER         | ID of the member who made the booking | FOREIGN KEY (memid) REFERENCES `cd.members`(memid) |
+| `starttime`          | TIMESTAMP       | Start time of the booking            | NOT NULL               |
+| `slots`              | INTEGER         | Number of slots booked               | NOT NULL               |
+
 
 # SQL Queries
 
 ## Table Setup (DDL)
 
+```sql
     CREATE TABLE cd.members
     (
        memid INTEGER NOT NULL, 
@@ -41,7 +81,7 @@
        CONSTRAINT fk_bookings_facid FOREIGN KEY (facid) REFERENCES cd.facilities(facid),
        CONSTRAINT fk_bookins_memid FOREIGN KEY (memid) REFERENCES cd.members(memid),
     )
-    
+```
 
 ## Questions
 
