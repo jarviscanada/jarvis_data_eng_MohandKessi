@@ -22,5 +22,5 @@ public interface JavaGrep {
     void setRegex(String regex);
 
     String getOutFile();
-    String setOutFile(String outFile);
+    void setOutFile(String outFile);
 }
