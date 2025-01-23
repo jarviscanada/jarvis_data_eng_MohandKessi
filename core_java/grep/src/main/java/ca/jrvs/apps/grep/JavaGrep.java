@@ -5,22 +5,26 @@ import java.io.IOException;
 import java.util.List;
 
 public interface JavaGrep {
-    void process() throws IOException;
 
-    List<File> listFiles(String rootDir);
+  void process() throws IOException;
 
-    List<String> readLines(File inputFile);
+  List<File> listFiles(String rootDir);
 
-    boolean containsPattern(String line);
+  List<String> readLines(File inputFile);
 
-    void writeToFile(List<String> lines) throws IOException;
+  boolean containsPattern(String line);
 
-    String getRootPath();
-    void setRootPath(String rootPath);
+  void writeToFile(List<String> lines) throws IOException;
 
-    String getRegex();
-    void setRegex(String regex);
+  String getRootPath();
 
-    String getOutFile();
-    void setOutFile(String outFile);
+  void setRootPath(String rootPath);
+
+  String getRegex();
+
+  void setRegex(String regex);
+
+  String getOutFile();
+
+  void setOutFile(String outFile);
 }
