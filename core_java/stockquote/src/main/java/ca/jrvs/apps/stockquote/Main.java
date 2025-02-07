@@ -4,11 +4,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.cdimascio.dotenv.Dotenv;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 public class Main {
 
@@ -17,20 +18,22 @@ public class Main {
     ObjectMapper mapper = new ObjectMapper();
     String symbol = "MSFT";
     String apiKey = dotenv.get("API_KEY");
-    HttpRequest request = HttpRequest.newBuilder()
-        .uri(URI.create("https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol="+symbol+"&datatype=json"))
-        .header("X-RapidAPI-Key", apiKey)
-        .header("X-RapidAPI-Host", "alpha-vantage.p.rapidapi.com")
-        .method("GET", HttpRequest.BodyPublishers.noBody())
-        .build();
-    try {
-      HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-      String json = response.body();
-      System.out.println(json);
-      StockQuote quote = mapper.readValue(json, StockQuote.class);
-      System.out.println(quote);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
+
+    String url = "https://alpha-vantage.p.rapidapi.com/query?function=GLOBAL_QUOTE&symbol=" + symbol + "&datatype=json";
+
+    try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+      HttpGet request = new HttpGet(url);
+      request.addHeader("X-RapidAPI-Key", apiKey);
+      request.addHeader("X-RapidAPI-Host", "alpha-vantage.p.rapidapi.com");
+
+      try (CloseableHttpResponse response = httpClient.execute(request)) {
+        String json = EntityUtils.toString(response.getEntity());
+        System.out.println(json);
+
+        StockQuote quote = mapper.readValue(json, StockQuote.class);
+        System.out.println(quote);
+        System.out.println(quote.getGlobalQuote().getHigh());
+      }
     } catch (JsonMappingException e) {
       e.printStackTrace();
     } catch (JsonProcessingException e) {
@@ -38,7 +41,5 @@ public class Main {
     } catch (IOException e) {
       e.printStackTrace();
     }
-
   }
-
 }
