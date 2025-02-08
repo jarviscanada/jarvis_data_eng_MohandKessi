@@ -1,5 +1,6 @@
-package ca.jrvs.apps.stockquote;
+package ca.jrvs.apps.stockquote.dao;
 
+import ca.jrvs.apps.stockquote.model.StockPosition;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

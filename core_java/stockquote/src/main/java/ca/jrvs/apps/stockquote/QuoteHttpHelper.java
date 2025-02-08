@@ -1,5 +1,6 @@
 package ca.jrvs.apps.stockquote;
 
+import ca.jrvs.apps.stockquote.model.StockQuote;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import okhttp3.OkHttpClient;

@@ -1,5 +1,6 @@
-package ca.jrvs.apps.stockquote;
+package ca.jrvs.apps.stockquote.dao;
 
+import ca.jrvs.apps.stockquote.model.StockQuote;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

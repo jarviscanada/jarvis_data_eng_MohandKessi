@@ -1,5 +1,7 @@
 package ca.jrvs.apps.stockquote;
 
+import ca.jrvs.apps.stockquote.dao.StockQuoteDao;
+import ca.jrvs.apps.stockquote.model.StockQuote;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
