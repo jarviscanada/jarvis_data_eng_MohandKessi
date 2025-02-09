@@ -54,7 +54,7 @@ public class StockQuoteController {
           logger.info("Exiting the application. Goodbye!");
           return;
         default:
-          logger.warn("Invalid choice. Please try again.");
+          logger.error("Invalid choice. Please try again.");
       }
     }
   }
@@ -69,7 +69,7 @@ public class StockQuoteController {
       logger.info("\nLatest Stock Quote for " + ticker + ":");
       logger.info(quote.toString());
     } else {
-      logger.warn("Failed to fetch quote for ticker: " + ticker);
+      logger.error("Failed to fetch quote for ticker: " + ticker);
     }
   }
 
@@ -114,7 +114,7 @@ public class StockQuoteController {
       logger.info("Current Value: $" + currentValue);
       logger.info("Profit/Loss: $" + (currentValue - pos.getValuePaid()));
     } else {
-      logger.warn("No position found for ticker: " + ticker);
+      logger.error("No position found for ticker: " + ticker);
     }
   }
 }

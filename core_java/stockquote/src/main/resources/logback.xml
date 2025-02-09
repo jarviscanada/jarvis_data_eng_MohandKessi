@@ -7,6 +7,9 @@
   </appender>
 
   <appender name="FILE-ERROR" class="ch.qos.logback.core.FileAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>ERROR</level>
+    </filter>
     <file>logs/application-error.log</file>
     <encoder>
       <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
@@ -28,7 +31,9 @@
   <logger name="ca.jrvs.apps.stockquote" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
     <appender-ref ref="FILE-APP-FLOW" />
+    <appender-ref ref="FILE-ERROR" />
   </logger>
+
 
 
 </configuration>
