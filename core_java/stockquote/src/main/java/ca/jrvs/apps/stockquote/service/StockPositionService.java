@@ -54,4 +54,8 @@ public class StockPositionService {
     }
   }
 
+  public Optional<StockPosition> findById(String ticker) {
+    return dao.findById(ticker);
+  }
+
 }

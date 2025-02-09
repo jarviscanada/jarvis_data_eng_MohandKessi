@@ -1,4 +1,4 @@
-package ca.jrvs.apps.stockquote;
+package ca.jrvs.apps.stockquote.utils;
 
 import java.io.IOException;
 import java.io.InputStream;
