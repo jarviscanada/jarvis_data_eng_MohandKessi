@@ -6,8 +6,8 @@ import ca.jrvs.apps.stockquote.model.StockQuote;
 import java.util.Optional;
 
 public class StockQuoteService {
-  private StockQuoteDao stockQuoteDao;
-  private QuoteHttpHelper quoteHttpHelper;
+  private final StockQuoteDao stockQuoteDao;
+  private final QuoteHttpHelper quoteHttpHelper;
 
   public StockQuoteService(StockQuoteDao stockQuoteDao, QuoteHttpHelper quoteHttpHelper) {
     this.stockQuoteDao = stockQuoteDao;
@@ -15,11 +15,6 @@ public class StockQuoteService {
 
   }
 
-  /**
-   * Fetches latest quote data from endpoint
-   * @param ticker
-   * @return Latest quote information or empty optional if ticker symbol not found
-   */
   public Optional<StockQuote> fetchQuoteDataFromAPI(String ticker) {
     try {
       // Fetch the stock quote using the QuoteHttpHelper

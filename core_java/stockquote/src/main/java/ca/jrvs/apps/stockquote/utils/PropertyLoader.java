@@ -7,7 +7,7 @@ import java.util.Properties;
 public class PropertyLoader {
 
   private static final String PROPERTIES_FILE = "properties.txt";
-  private static Properties properties;
+  private static final Properties properties;
 
   static {
     properties = new Properties();

@@ -10,6 +10,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import org.jetbrains.annotations.NotNull;
 
 public class Main {
 
@@ -26,16 +27,24 @@ public class Main {
 
     try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
       // Initialize DAOs and services
-      StockQuoteDao stockQuoteDao = new StockQuoteDao(connection);
-      QuoteHttpHelper quoteHttpHelper = new QuoteHttpHelper(apiKey);
-      StockQuoteService stockQuoteService = new StockQuoteService(stockQuoteDao, quoteHttpHelper);
-      StockPositionDao stockPositionDao = new StockPositionDao(connection);
-      StockPositionService stockPositionService = new StockPositionService(stockPositionDao);
-
-      StockQuoteController stockQuoteController = new StockQuoteController(stockQuoteService, stockPositionService);
+      StockQuoteController stockQuoteController = getStockQuoteController(
+          connection, apiKey);
       stockQuoteController.initClient();
     } catch (SQLException e) {
       e.printStackTrace();
     }
+  }
+
+  @NotNull
+  private static StockQuoteController getStockQuoteController(Connection connection,
+      String apiKey) {
+    StockQuoteDao stockQuoteDao = new StockQuoteDao(connection);
+    QuoteHttpHelper quoteHttpHelper = new QuoteHttpHelper(apiKey);
+    StockQuoteService stockQuoteService = new StockQuoteService(stockQuoteDao, quoteHttpHelper);
+    StockPositionDao stockPositionDao = new StockPositionDao(connection);
+    StockPositionService stockPositionService = new StockPositionService(stockPositionDao);
+
+    StockQuoteController stockQuoteController = new StockQuoteController(stockQuoteService, stockPositionService);
+    return stockQuoteController;
   }
 }
