@@ -24,6 +24,7 @@ public class StockQuoteService {
     try {
       // Fetch the stock quote using the QuoteHttpHelper
       StockQuote quote = quoteHttpHelper.fetchQuote(ticker);
+      stockQuoteDao.save(quote);
 
       // Return the quote wrapped in an Optional
       return Optional.of(quote);
