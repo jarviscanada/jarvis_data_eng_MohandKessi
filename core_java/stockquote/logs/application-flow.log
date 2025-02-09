@@ -1,0 +1,296 @@
+2025-02-08 20:42:34 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:42:34 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:44:21 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:44:21 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:44:35 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 
+Latest Stock Quote for AAPL:
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - Optional[StockQuote{globalQuote=GlobalQuote{symbol='AAPL', open=232.6, high=234.0, low=227.26, price=227.63, volume=3.9707224E7, latestTradingDate='2025-02-07', previousClose='233.2200', change=-5.59, changePercent='-2.3969%'}}]
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:44:44 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:44:47 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!
+2025-02-08 20:45:34 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:45:34 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:46:59 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:46:59 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:57:49 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:57:49 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:58:10 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 
+Latest Stock Quote for AAPL:
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - Optional[StockQuote{globalQuote=GlobalQuote{symbol='AAPL', open=232.6, high=234.0, low=227.26, price=227.63, volume=3.9707224E7, latestTradingDate='2025-02-07', previousClose='233.2200', change=-5.59, changePercent='-2.3969%'}}]
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 20:58:12 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 20:58:14 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!
+2025-02-08 21:03:42 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:03:42 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:03:59 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:04:00 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:04:16 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:04:16 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:04:23 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:04:23 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:04:41 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:04:41 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:07:19 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:07:19 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:07:37 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:07:38 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:09:11 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:09:11 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:10:50 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:10:50 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:11:49 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:11:49 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:25:27 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:25:27 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:25:36 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 
+Latest Stock Quote for BTC:
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - Optional[StockQuote{globalQuote=GlobalQuote{symbol='BTC', open=44.21, high=44.44, low=42.38, price=42.42, volume=988251.0, latestTradingDate='2025-02-07', previousClose='42.9600', change=-0.54, changePercent='-1.2570%'}}]
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:25:41 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:25:44 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!
+2025-02-08 21:26:25 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:26:25 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:26:31 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 
+Position Details for ENS:
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - Number of Shares: 50
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - Total Amount Paid: $4850.0
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - Current Value: $4986.0
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - Profit/Loss: $136.0
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:26:36 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:26:42 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:26:44 INFO  c.j.a.s.c.StockQuoteController - Enter the number of shares to buy: 
+2025-02-08 21:26:46 INFO  c.j.a.s.c.StockQuoteController - Enter the price per share: 
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 
+Successfully bought shares:
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - ca.jrvs.apps.stockquote.model.StockPosition@159e366
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:26:49 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:26:51 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!
+2025-02-08 21:28:52 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:28:52 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:29:02 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:29:05 INFO  c.j.a.s.c.StockQuoteController - Enter the number of shares to buy: 
+2025-02-08 21:29:07 INFO  c.j.a.s.c.StockQuoteController - Enter the price per share: 
+2025-02-08 21:29:25 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:29:25 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:29:32 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:29:34 WARN  c.j.a.s.c.StockQuoteController - No position found for ticker: NTLDSNTY
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:29:34 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:29:43 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!
+2025-02-08 21:31:08 INFO  ca.jrvs.apps.stockquote.Main - Successfully connected to the database.
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - Welcome to the Stock Quote Application!
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:31:08 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:31:12 INFO  c.j.a.s.c.StockQuoteController - Enter the stock ticker symbol: 
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 
+Latest Stock Quote for ENS:
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - Optional[StockQuote{globalQuote=GlobalQuote{symbol='ENS', open=97.33, high=100.15, low=96.91, price=99.72, volume=519117.0, latestTradingDate='2025-02-07', previousClose='96.4600', change=3.26, changePercent='3.3796%'}}]
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 
+Please choose an option:
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 1. Fetch and display stock quote
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 2. Buy shares
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 3. Sell shares
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 4. View position value
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - 5. Exit
+2025-02-08 21:31:15 INFO  c.j.a.s.c.StockQuoteController - Enter your choice: 
+2025-02-08 21:31:24 INFO  c.j.a.s.c.StockQuoteController - Exiting the application. Goodbye!

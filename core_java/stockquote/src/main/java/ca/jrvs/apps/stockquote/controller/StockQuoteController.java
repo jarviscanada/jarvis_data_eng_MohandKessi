@@ -6,12 +6,15 @@ import ca.jrvs.apps.stockquote.service.StockPositionService;
 import ca.jrvs.apps.stockquote.service.StockQuoteService;
 import java.util.Optional;
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class StockQuoteController {
 
   private final StockQuoteService quoteService;
   private final StockPositionService positionService;
   private final Scanner scanner;
+  private static final Logger logger = LoggerFactory.getLogger(StockQuoteController.class);
 
   public StockQuoteController(StockQuoteService quoteService, StockPositionService positionService) {
     this.quoteService = quoteService;
@@ -20,16 +23,17 @@ public class StockQuoteController {
   }
 
   public void initClient() {
-    System.out.println("Welcome to the Stock Quote Application!");
+
+    logger.info("Welcome to the Stock Quote Application!");
 
     while (true) {
-      System.out.println("\nPlease choose an option:");
-      System.out.println("1. Fetch and display stock quote");
-      System.out.println("2. Buy shares");
-      System.out.println("3. Sell shares");
-      System.out.println("4. View position value");
-      System.out.println("5. Exit");
-      System.out.print("Enter your choice: ");
+      logger.info("\nPlease choose an option:");
+      logger.info("1. Fetch and display stock quote");
+      logger.info("2. Buy shares");
+      logger.info("3. Sell shares");
+      logger.info("4. View position value");
+      logger.info("5. Exit");
+      logger.info("Enter your choice: ");
 
       String choice = scanner.nextLine();
 
@@ -47,53 +51,53 @@ public class StockQuoteController {
           viewPositionValue();
           break;
         case "5":
-          System.out.println("Exiting the application. Goodbye!");
+          logger.info("Exiting the application. Goodbye!");
           return;
         default:
-          System.out.println("Invalid choice. Please try again.");
+          logger.warn("Invalid choice. Please try again.");
       }
     }
   }
 
   private void fetchAndDisplayQuote() {
-    System.out.print("Enter the stock ticker symbol: ");
+    logger.info("Enter the stock ticker symbol: ");
     String ticker = scanner.nextLine().toUpperCase();
 
     Optional<StockQuote> quote = quoteService.fetchQuoteDataFromAPI(ticker);
 
     if (quote.isPresent()) {
-      System.out.println("\nLatest Stock Quote for " + ticker + ":");
-      System.out.println(quote.get());
+      logger.info("\nLatest Stock Quote for " + ticker + ":");
+      logger.info(quote.toString());
     } else {
-      System.out.println("Failed to fetch quote for ticker: " + ticker);
+      logger.warn("Failed to fetch quote for ticker: " + ticker);
     }
   }
 
   private void buyShares() {
-    System.out.print("Enter the stock ticker symbol: ");
+    logger.info("Enter the stock ticker symbol: ");
     String ticker = scanner.nextLine().toUpperCase();
 
-    System.out.print("Enter the number of shares to buy: ");
+    logger.info("Enter the number of shares to buy: ");
     int numOfShares = Integer.parseInt(scanner.nextLine());
 
-    System.out.print("Enter the price per share: ");
+    logger.info("Enter the price per share: ");
     double price = Double.parseDouble(scanner.nextLine());
 
     StockPosition position = positionService.buy(ticker, numOfShares, price);
-    System.out.println("\nSuccessfully bought shares:");
-    System.out.println(position);
+    logger.info("\nSuccessfully bought shares:");
+    logger.info(position.toString());
   }
 
   private void sellShares() {
-    System.out.print("Enter the stock ticker symbol: ");
+    logger.info("Enter the stock ticker symbol: ");
     String ticker = scanner.nextLine().toUpperCase();
 
     positionService.sell(ticker);
-    System.out.println("\nSuccessfully sold all shares of " + ticker);
+    logger.info("\nSuccessfully sold all shares of " + ticker);
   }
 
   private void viewPositionValue() {
-    System.out.print("Enter the stock ticker symbol: ");
+    logger.info("Enter the stock ticker symbol: ");
     String ticker = scanner.nextLine().toUpperCase();
 
     Optional<StockPosition> position = positionService.findById(ticker);
@@ -104,13 +108,13 @@ public class StockQuoteController {
           .orElseThrow(() -> new RuntimeException("Failed to fetch quote for ticker: " + ticker))
           .getGlobalQuote().getPrice();
 
-      System.out.println("\nPosition Details for " + ticker + ":");
-      System.out.println("Number of Shares: " + pos.getNumOfShares());
-      System.out.println("Total Amount Paid: $" + pos.getValuePaid());
-      System.out.println("Current Value: $" + currentValue);
-      System.out.println("Profit/Loss: $" + (currentValue - pos.getValuePaid()));
+      logger.info("\nPosition Details for " + ticker + ":");
+      logger.info("Number of Shares: " + pos.getNumOfShares());
+      logger.info("Total Amount Paid: $" + pos.getValuePaid());
+      logger.info("Current Value: $" + currentValue);
+      logger.info("Profit/Loss: $" + (currentValue - pos.getValuePaid()));
     } else {
-      System.out.println("No position found for ticker: " + ticker);
+      logger.warn("No position found for ticker: " + ticker);
     }
   }
 }
