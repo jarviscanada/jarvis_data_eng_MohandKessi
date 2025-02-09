@@ -18,7 +18,15 @@ public class Main {
     String symbol = "ETH";
     String apiKey = dotenv.get("API_KEY");
 
-    try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/stock_quote", "postgres", "password")) {
+    //String dbClass = PropertyLoader.getProperty("db-class");
+    String server = PropertyLoader.getProperty("server");
+    String database = PropertyLoader.getProperty("database");
+    String port = PropertyLoader.getProperty("port");
+    String username = PropertyLoader.getProperty("username");
+    String password = PropertyLoader.getProperty("password");
+    String jdbcUrl = "jdbc:postgresql://" + server + ":" + port + "/" + database;
+
+    try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password)) {
       // Initialize DAOs and services
       StockQuoteDao stockQuoteDao = new StockQuoteDao(connection);
       QuoteHttpHelper quoteHttpHelper = new QuoteHttpHelper(apiKey);
