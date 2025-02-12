@@ -22,7 +22,7 @@ Set up your PostgreSQL server if you haven't already. Ensure it's running and ac
 ### 5. Create the Database
 Create the database by running the following command:
 ```bash
-psql -U postgres -f stockquote.sql
+psql -U postgres -f stock_quote.sql
 ```
 
 ### 6. Run the Docker Container
@@ -42,7 +42,7 @@ The service will now be accessible at `http://localhost:8080`.
 
 ## Implementation
 ### ER Diagram
-//TODO
+![Database Diagram](Diagram.png)
 
 ### Design Pattern
 This application implements the DAO (Data Access Object) and Repository design patterns. We used the DAO pattern to abstract and encapsulate all interactions with the database. It provides an interface for the service layer to interact with the data source without directly depending on the underlying data access logic.
