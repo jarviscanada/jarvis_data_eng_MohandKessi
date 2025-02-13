@@ -38,7 +38,7 @@ docker pull volta808/grep
 ```bash
 docker run --rm \
 -v `pwd`/data:/data -v `pwd`/log:/log \
-${docker_user}/grep .*Romeo.*Juliet.* /data /log/grep.out
+volta808/grep .*Romeo.*Juliet.* /data /log/grep.out
 ```
 # Improvement
 1. Precompile regex pattern: Reduce redundant Pattern.compile() calls.
