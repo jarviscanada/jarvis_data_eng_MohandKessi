@@ -1,0 +1,148 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Scholarship",
+        "Dean's List (2015, 2016): Ut enim ad minim veniam",
+        "GPA: 3.8/4.0"
+      ],
+      "degree": "Bachelor of Applied Sciences",
+      "department": "Electrical and Computer Engineering",
+      "duration": "2012-2016",
+      "school_name": "XYZ university"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Master of Engineering",
+      "department": "Electrical and Computer Engineering",
+      "duration": "2016-2018",
+      "school_name": "XYZ university"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
+  "highlighted_projects": [
+    {
+      "description": "Blitz is a mobile application developed in Kotlin with Compose that allows you to check bus schedules in real-time. Additionally, it displays a Google Maps map with bus stops to help you plan your trips easily.",
+      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
+      "name": "Blitz"
+    },
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": null,
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "This project is designed to monitor and log hardware specifications and usage metrics for a set of Linux servers. The project automates data collection and storage using shell scripts, PostgreSQL for data storage, and Docker for isolation.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "Grep App: Grep is a Java application that recursively searches for a given regex pattern in files within a specified directory. It read lines from all files, filters the lines matching the pattern, and writes the result to an output file. This implementation utilizes Java Streams and Lambda exprssions to enhance readability and performance"
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Mohand Kessi",
+  "others": [
+    {
+      "bullets": [
+        "Udacity Machine Learning (2019)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Winner"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Basketball player",
+        "Competitive gaming",
+        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "duration": "2020-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "GoConnexions",
+      "description": "Developed the company's mobile application using Django for the backend and Flutter for the frontend. The app is designed to function like LinkedIn. Worked on implementing core features such as user authentification, profile management, and real-time interactions. Collaborated closely with the team to ensure a seamless user experience and scalable architecture.",
+      "duration": "2024-2024",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Rosemont College",
+      "description": "Hired as a salaried tutor to assist both teachers and students in learning Object-Oriented Programming (OOP). Provided one-on-one and group tutoring sessions, clarified complex programming concepts, and helped students improve their coding skills. Developed teaching materials, reviewed assignments, and guided students through debugging and problem-solving strategies to enhance their understanding of software development.",
+      "duration": "2018-2022",
+      "title": "Programming Tutor"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "C",
+      "RUST",
+      "Windows Server",
+      "Ruby",
+      "Unreal Engine \u0026 Unity"
+    ],
+    "familiar": [
+      "Azure Dev Ops",
+      "React.js",
+      "Kubernetes",
+      "NoSQL Databases (MongoDB)",
+      "AWS (Amazon Web Services)"
+    ],
+    "proficient": [
+      "Java, Kotlin",
+      "C++, C#, C",
+      "Python",
+      "PHP",
+      "ASP.NET, Vue.js, Laravel, Angular, Spring Boot, Bootstrap",
+      "Linux/Bash (Arch, Ubuntu, Fedora, Debian, Mint, Manjaro, Redhat..)",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "Docker"
+    ]
+  },
+  "summary": "Experienced and versatile Web and Moblie Developer with a strong foundation in fullstack development, database design, and team collaboration. Skilled in leveraging modern frameworks and tools. I am seeking a dynamic role where I can contribute my expertise in programming, problem-solving, and innovative solutions to drive impactful projects."
+}
