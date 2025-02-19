@@ -1,0 +1,8 @@
+Hello there
+this is a file test
+IllegalArgumentException dsgdsg dsgsd
+.*IllegalArgumentException*
+DSgsd
+gsdlgnjdsl
+
+TestTestTestTest .*IllegalArgumentException*
