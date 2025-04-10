@@ -25,7 +25,7 @@ IDENTIFICATION DIVISION.
        FD  STUDENT-SEQ-FILE
            RECORD CONTAINS 120 CHARACTERS.
        01  SEQ-STUDENT-RECORD.
-           05  SEQ-STUDENT-ID           PIC 9(5).
+           05  SEQ-STUDENT-ID           PIC 9(6).
            05  SEQ-STUDENT-NAME         PIC X(30).
            05  SEQ-STUDENT-ADDRESS      PIC X(40).
            05  SEQ-STUDENT-PHONE        PIC X(15).
