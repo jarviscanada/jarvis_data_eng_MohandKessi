@@ -3,9 +3,6 @@
        AUTHOR. Mohand Kessi.
        
        ENVIRONMENT DIVISION.
-       CONFIGURATION SECTION.
-       SOURCE-COMPUTER. IBM-PC.
-       OBJECT-COMPUTER. IBM-PC.
        
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.

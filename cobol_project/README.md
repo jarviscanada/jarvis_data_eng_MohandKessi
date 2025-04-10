@@ -37,7 +37,7 @@ Each student record contains the following fields:
 - Phone Number (15 characters)
 - Email Address (20 characters)
 - Course Code (4 characters)
-- Inclusion Date (8 digits, YYYYMMDD format)
+- Inclusion Date (8 digits, YYYYMMDD format)Sure
 
 ## Installation and Setup
 
