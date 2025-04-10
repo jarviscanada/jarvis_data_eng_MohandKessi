@@ -48,14 +48,14 @@ Each student record contains the following fields:
 
 ```
 cobc -x PRGMENU.cbl
-cobc -x PRGV0001.cbl
-cobc -x PRGI0002.cbl
-cobc -x PRGU0003.cbl
-cobc -x PRGD0004.cbl
-cobc -x PRGQ0005.cbl
-cobc -x PRGQ0006.cbl
-cobc -x PRGQ0007.cbl
-cobc -x PRGR0008.cbl
+cobc -m PRGV0001.cbl
+cobc -m PRGI0002.cbl
+cobc -m PRGU0003.cbl
+cobc -m PRGD0004.cbl
+cobc -m PRGQ0005.cbl
+cobc -m PRGQ0006.cbl
+cobc -m PRGQ0007.cbl
+cobc -m PRGR0008.cbl
 ```
 
 ## Usage Guide
