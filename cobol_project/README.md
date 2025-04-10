@@ -13,6 +13,9 @@ The Student Registration System is designed to efficiently manage student data u
 - Querying student data through various methods
 - Generating reports with course breakdowns
 
+## Architecture
+![Blueprint](Capture.PNG)
+
 ## Programs Included
 
 | Program ID | Description |
