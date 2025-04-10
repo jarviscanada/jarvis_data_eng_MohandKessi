@@ -1,6 +1,6 @@
 IDENTIFICATION DIVISION.
        PROGRAM-ID. PRGMENU.
-       AUTHOR. Mohand.
+       AUTHOR. Mohand Kessi.
        
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
