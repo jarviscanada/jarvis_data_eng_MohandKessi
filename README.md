@@ -6,7 +6,7 @@ Experienced and versatile Web and Moblie Developer with a strong foundation in f
 
 **Proficient:** Java, Kotlin, C++, C#, C, Python, PHP, ASP.NET, Vue.js, Laravel, Angular, Spring Boot, Bootstrap, Linux/Bash (Arch, Ubuntu, Fedora, Debian, Mint, Manjaro, Redhat..), RDBMS/SQL (MySQL, PostgreSQL, MariaDB), RESTful APIs, Agile/Scrum, Git, Docker
 
-**Competent:** C, RUST, TypeScript, Windows Server, Raspberry PI, Arduino, WebSockets, Microservices Architecture, Ruby, Unreal Engine & Unity
+**Competent:** C, RUST, COBOL, DB2, TypeScript, Windows Server, Raspberry PI, Arduino, WebSockets, Microservices Architecture, Ruby, Unreal Engine & Unity
 
 **Familiar:** Azure Dev Ops, Figma (UI/UX Design), React.js, Kubernetes, NoSQL Databases (MongoDB), AWS (Amazon Web Services)
 
@@ -19,9 +19,10 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](http
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
       
-
   - Stock App: Stock App is a powerful and intuitive platform designed for users to interact with real-time stock market data. It seamlessly integrates with the Alpha Vantage API to fetch live stock quotes, enabling users to track market trends and make informed decisions. With Stock App, you can simulate real trading by setting a fictional balance and managing stock positions—buying and selling shares just like in the real market. Whether you're an aspiring investor looking to sharpen your skills or a trading enthusiast wanting to test strategies without financial risk, this app provides the perfect training ground.
   - Grep App: Grep is a Java application that recursively searches for a given regex pattern in files within a specified directory. It reads lines from all files, filters the lines matching the pattern, and writes the result to an output file. This implementation utilizes Java Streams and Lambda experssions to enhance readability and performance
+
+**Student Registration System** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cobol_project)]: This project is a comprehensive COBOL-based system for managing student records, providing functionality for adding, querying and reporting on student information.
 
 
 ## Highlighted Projects
@@ -32,7 +33,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](http
 **MediClic**: A comprehensive web application designed to streamline medical appointment scheduling for both patients and clinic personnel. Built using Java EE for the backend and Angular for the frontend, MediClic offers a user-friendly interface, real-time appointment management, and secure patient data handling to enhance the efficiency of healthcare services.
 
 **VMemory**: VMemory is an engaging memory game where players flip cards and match pairs by remembering their positions. The frontend is built with HTML, CSS, and Javascript for a smooth and interactive user experience. The backend, implemented using Spring Boot and SQL, handles score tracking and leaderboard management, ensuring a competitive and dynamic gameplay experience.
-
 
 
 ## Professional Experiences
