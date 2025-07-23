@@ -26,6 +26,8 @@ skills:
   # At least 5 skills
   competent:
     - C
+    - CICS
+    - MBS MACROS
     - RUST
     - COBOL
     - DB2

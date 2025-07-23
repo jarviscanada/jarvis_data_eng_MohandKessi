@@ -6,7 +6,7 @@ Experienced and versatile Web and Moblie Developer with a strong foundation in f
 
 **Proficient:** Java, Kotlin, C++, C#, C, Python, PHP, ASP.NET, Vue.js, Laravel, Angular, Spring Boot, Bootstrap, Linux/Bash (Arch, Ubuntu, Fedora, Debian, Mint, Manjaro, Redhat..), RDBMS/SQL (MySQL, PostgreSQL, MariaDB), RESTful APIs, Agile/Scrum, Git, Docker
 
-**Competent:** C, RUST, COBOL, DB2, TypeScript, Windows Server, Raspberry PI, Arduino, WebSockets, Microservices Architecture, Ruby, Unreal Engine & Unity
+**Competent:** C, CICS, MBS MACROS, RUST, COBOL, DB2, TypeScript, Windows Server, Raspberry PI, Arduino, WebSockets, Microservices Architecture, Ruby, Unreal Engine & Unity
 
 **Familiar:** Azure Dev Ops, Figma (UI/UX Design), React.js, Kubernetes, NoSQL Databases (MongoDB), AWS (Amazon Web Services)
 
