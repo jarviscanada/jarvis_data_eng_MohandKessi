@@ -55,7 +55,7 @@
       "name": "Core Java Apps"
     },
     {
-      "description": "This project is a comprehensive COBOL-based system for managing student records, providing functionality for adding, querying and reporting on student information.",
+      "description": "This project is a comprehensive COBOL-based system for managing student records, providing functionality for adding, querying and reporting on student information. The project is deployed on an actual mainframe computer using a DB2 database to store information.",
       "git_url": "/cobol_project",
       "name": "Student Registration System"
     }
@@ -102,6 +102,8 @@
       "C",
       "CICS",
       "MBS MACROS",
+      "JCL",
+      "ISPF",
       "RUST",
       "COBOL",
       "DB2",

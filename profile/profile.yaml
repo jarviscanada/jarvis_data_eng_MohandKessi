@@ -28,6 +28,8 @@ skills:
     - C
     - CICS
     - MBS MACROS
+    - JCL
+    - ISPF
     - RUST
     - COBOL
     - DB2
@@ -61,7 +63,7 @@ jarvis_projects:
       - "Grep App: Grep is a Java application that recursively searches for a given regex pattern in files within a specified directory. It reads lines from all files, filters the lines matching the pattern, and writes the result to an output file. This implementation utilizes Java Streams and Lambda experssions to enhance readability and performance"
   - name: "Student Registration System"
     git_url: "/cobol_project"
-    description: "This project is a comprehensive COBOL-based system for managing student records, providing functionality for adding, querying and reporting on student information."
+    description: "This project is a comprehensive COBOL-based system for managing student records, providing functionality for adding, querying and reporting on student information. The project is deployed on an actual mainframe computer using a DB2 database to store information."
 # List of personal or academic projects
 # Feel free to add more projects
 highlighted_projects:
